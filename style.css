@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fb;
+    color: #1e293b;
+}
+
+/* HERO */
+
+.hero{
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: white;
+    padding: 30px 10%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.menu{
+    display: flex;
+    gap: 30px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    opacity: 0.7;
+}
+
+.hero-content{
+    margin-top: 120px;
+    max-width: 700px;
+}
+
+.hero-content h1{
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.hero-content p{
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.btn{
+    background: white;
+    color: #1e3a8a;
+    padding: 15px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: #dbeafe;
+}
+
+/* SECTION */
+
+.section{
+    padding: 80px 10%;
+}
+
+.section h2{
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+/* CARD */
+
+.card{
+    background: white;
+    padding: 35px;
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.card p{
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* GRID */
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* PROJECT CARD */
+
+.project-card{
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.project-card:hover{
+    transform: translateY(-8px);
+}
+
+.project-card h3{
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.project-card p{
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.project-card button{
+    background: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.project-card button:hover{
+    background: #172554;
+}
+
+/* CONTATO */
+
+.contato p{
+    font-size: 18px;
+}
+
+/* FOOTER */
+
+footer{
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width: 768px){
+
+    .navbar{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content{
+        margin-top: 80px;
+    }
+
+    .hero-content h1{
+        font-size: 42px;
+    }
+
+    .hero-content p{
+        font-size: 18px;
+    }
+
+}
